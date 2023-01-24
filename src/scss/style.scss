@@ -64,7 +64,27 @@ img {
 	margin: 0 auto;
 }
 
-
+// First screen
+.fs {
+	padding: 90px 0;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	font-size: 27px;
+	font-weight: 700;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+}
+.menu__item {
+	font-size: 20px;
+}
 
 
 
