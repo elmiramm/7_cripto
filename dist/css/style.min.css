@@ -63,7 +63,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
-  background-color: #02061A;
+  background: #02061A;
 }
 
 a {
@@ -172,4 +172,28 @@ button {
 }
 .menu__item {
   font-size: 20px;
+}
+
+.featured {
+  padding: 50px 0;
+}
+.featured__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.featured__company {
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #262F45, #23263C);
+  border: 1px solid #5BD2BF;
+  box-shadow: -13px 13px 0px -1px #02061A, -13px 13px 0px 0px #5BD2BF;
+}
+.featured__company span {
+  font-size: 27px;
+  font-weight: 700;
+  opacity: 0.5;
 }

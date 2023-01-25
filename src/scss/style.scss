@@ -10,6 +10,7 @@ $accentColor: #4C99BB;
 
 $bg: #02061A;
 $bgContent: #24293F;
+$darkGradient: linear-gradient(to right, #262F45, #23263C);
 $gradient: linear-gradient(to right bottom, #1F143B, #3C8273);
 
 $maxWidth: 1440px;
@@ -30,7 +31,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: $mainTextColor;
-	background-color: $bg;
+	background: $bg;
 }
 
 a {
@@ -144,6 +145,39 @@ button {
 	gap: 70px;
 	&__item {
 		font-size: 20px;
+	}
+}
+
+// Second - Featured
+.featured {
+	padding: 50px 0;
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		margin-bottom: 8px;
+	}
+	&__company {
+		padding: 45px 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		background: $darkGradient;
+		border: 1px solid $textColor;
+
+		box-shadow: -13px 13px 0px -1px $bg,
+		-13px 13px 0px 0px $textColor;
+		& span {
+			font-size: 27px;
+			font-weight: 700;
+			opacity: 0.5;
+		}
+
+	
+		
 	}
 }
 
