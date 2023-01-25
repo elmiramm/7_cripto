@@ -48,6 +48,10 @@
 
 .icon-right:before {
   content: "\e901";
+  position: absolute;
+  font-size: 20px;
+  right: -6px;
+  top: 39%;
 }
 
 *,
@@ -60,7 +64,7 @@ html,
 body {
   font-family: "Outfit", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5;
   color: #fff;
   background: #02061A;
@@ -98,7 +102,7 @@ button {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -162,7 +166,6 @@ button {
 
 .logo {
   font-size: 27px;
-  font-weight: 700;
 }
 
 .menu {
@@ -179,7 +182,6 @@ button {
 }
 .featured__title {
   font-size: 30px;
-  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -194,6 +196,67 @@ button {
 }
 .featured__company span {
   font-size: 27px;
-  font-weight: 700;
   opacity: 0.5;
+}
+
+.buy {
+  padding: 150px 0 57px;
+}
+.buy .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+.buy__img {
+  align-self: center;
+  grid-row: 1/6;
+}
+.buy__title span {
+  color: #5BD2BF;
+}
+.buy__desc {
+  font-size: 26px;
+  color: #4C99BB;
+}
+.buy__price {
+  font-size: 40px;
+}
+.buy__price .span--line {
+  text-decoration: line-through 7px #5BD2BF;
+}
+.buy__price .icon-right {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+.buy__btn {
+  justify-self: start;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: solid 1px #5BD2BF;
+  padding: 26px 14px 20px 19px;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 34px;
+}
+.buy__btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5BD2BF;
+  border-radius: 16px;
+}
+.buy__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  padding: 18px 34px;
+  background-color: #3A5B6A;
+  border-radius: 18px;
+  font-size: 30px;
+  text-align: center;
 }

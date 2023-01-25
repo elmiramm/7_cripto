@@ -14,7 +14,7 @@ $darkGradient: linear-gradient(to right, #262F45, #23263C);
 $gradient: linear-gradient(to right bottom, #1F143B, #3C8273);
 
 $maxWidth: 1440px;
-$maxWidthContainer: 1100px;
+$maxWidthContainer: 1130px;
 //------Vars-End------ 
 
 *,
@@ -28,7 +28,7 @@ body {
 	// font-family: -;
 	font-family: $fontFamily, sans-serif;
 	font-size: $fontSize;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 1.5;
 	color: $mainTextColor;
 	background: $bg;
@@ -88,6 +88,7 @@ button {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
+	
 }
 
 .title {
@@ -137,7 +138,6 @@ button {
 }
 .logo {
 	font-size: 27px;
-	font-weight: 700;
 }
 .menu {
 	display: flex;
@@ -153,7 +153,6 @@ button {
 	padding: 50px 0;
 	&__title {
 		font-size: 30px;
-		font-weight: 700;
 		text-transform: uppercase;
 
 		margin-bottom: 8px;
@@ -172,7 +171,6 @@ button {
 		-13px 13px 0px 0px $textColor;
 		& span {
 			font-size: 27px;
-			font-weight: 700;
 			opacity: 0.5;
 		}
 
@@ -181,6 +179,72 @@ button {
 	}
 }
 
+//Third - Buy
+.buy {
+	padding: 150px 0 57px;
+	& .container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 30px;
+	}
+	&__img {
+		align-self: center;
+		grid-row: 1 / 6;
+	}
+	&__title span  {
+		color: $textColor;
+	}
+	&__desc {
+		font-size: 26px;
+		color: $accentColor;
+	}
+	&__price {
+		font-size: 40px;
+		& .span--line {
+			text-decoration: line-through 7px $textColor;
+		}
+		& .icon-right {
+			position: relative;
+			display: inline-block;
+
+			margin-right: 5px;
+		}
+	}
+	&__btn {
+		justify-self: start;
+		font-size: 25px;
+		text-transform: capitalize;
+		background-color: transparent;
+		border: solid 1px $textColor;
+		padding: 26px 14px 20px 19px;
+		border-radius: 16px;
+
+		position: relative;
+		margin-bottom: 34px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			width: 100%;
+			height: 100%;
+			border: 1px solid $textColor;
+			border-radius: 16px;
+		}
+	}
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 18px;
+		padding: 18px 34px;
+		background-color: #3A5B6A;
+		border-radius: 18px;
+
+		font-size: 30px;
+		text-align: center;
+	}
+}
 
 
 
