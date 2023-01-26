@@ -90,14 +90,12 @@ button {
 	font-weight: 700;
 	
 }
-
 .title {
 	font-size: 60px;
 	font-weight: 700;
 }
 
 // Общие блоки --- end---
-
 
 // First screen
 .fs {
@@ -243,6 +241,76 @@ button {
 
 		font-size: 30px;
 		text-align: center;
+	}
+}
+
+//Forth - Nfts
+.nfts {
+	padding-bottom: 243px;
+	& .container {
+		display: grid;
+		align-items: end;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__cards {
+		position: relative;
+	}
+}
+.card {
+	position: relative;
+	width: 375px;
+	&:nth-child(1) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	&__img {
+		height: 358px;
+		border-radius: 4px;
+	}
+	&__content {
+		padding: 20px 30px;
+		border-radius: 0 0 10px 10px;
+		background: rgba(137, 130, 130, 0.5);
+	}
+	&__title {
+		font-size: 40px;
+		color: $textColor;
+		text-shadow: 1px 1px #02061A, -1px 1px 2px #02061A,
+		1px -1px #02061A,-1px -1px #02061A;
+		
+	}
+	&__info {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		gap: 24px;
+	}
+	&__count {
+		font-size: 35px;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		& span {
+			font-size: 40px;
+			text-transform: uppercase;
+		}
+	}
+	&__status {
+		justify-self: end;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px 30px;
+		border-radius: 3px;
+		border: 1px solid #000;
+		color: #52A7c6;
+		background-color: $bgContent;
+		font-size: 40px;
+		box-shadow: 13px -13px 0px -1px rgba($color: #898282, $alpha: 0.5),
+		13px -13px 0px 0px #020619;
 	}
 }
 
