@@ -325,5 +325,5 @@ button {
   color: #52A7c6;
   background-color: #24293F;
   font-size: 40px;
-  box-shadow: 13px -13px 0px -1px rgba(137, 130, 130, 0.5), 13px -13px 0px 0px #020619;
+  box-shadow: 8px -8px 0px -1px rgba(137, 130, 130, 0.5), 8px -8px 0px -1px #020619, 8px -8px 0px 0px #000;
 }
