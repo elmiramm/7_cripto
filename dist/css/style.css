@@ -44,6 +44,11 @@
 
 .icon-accept:before {
   content: "\e900";
+  position: absolute;
+  color: #4C99BB;
+  font-size: 30px;
+  left: 8px;
+  bottom: 7px;
 }
 
 .icon-right:before {
@@ -375,4 +380,51 @@ button {
   background-color: #24293F;
   font-size: 40px;
   box-shadow: 8px -8px 0px -2px rgba(137, 130, 130, 0.5), 8px -8px 0px -2px #020619, 8px -8px 0px 0px #000;
+}
+
+.testmonial__suptitle {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5BD2BF;
+}
+.testmonial__title {
+  text-align: center;
+  line-height: 1.2;
+}
+.testmonial__reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.reviews__item {
+  position: relative;
+}
+.reviews__circle {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: #5BD2BF;
+  border-radius: 50%;
+  left: 59%;
+  z-index: 2;
+}
+.reviews__img {
+  margin: 0 auto;
+  width: 138px;
+  height: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  overflow: hidden;
+  position: relative;
+}
+.reviews__img img {
+  position: absolute;
+  left: -5px;
+}
+.reviews__content {
+  padding: 94px 26px 76px;
 }

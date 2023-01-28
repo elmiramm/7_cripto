@@ -30,6 +30,11 @@
 
 .icon-accept:before {
 	content: "\e900";
+	position: absolute;
+	color: $accentColor;
+	font-size: 30px;
+	left: 8px;
+	bottom: 7px;
 }
 .icon-right:before {
 	content: "\e901";
