@@ -130,6 +130,27 @@ button {
 
 .fs {
   padding: 90px 0;
+  position: relative;
+}
+.fs__circle {
+  width: 590px;
+  position: absolute;
+  height: 590px;
+  border-radius: 50%;
+  background-color: #5BD2BF;
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+}
+.fs__circle:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.fs__circle:nth-child(2) {
+  background-color: #4C99BB;
+  transform: translate(50%, 50%);
+  z-index: 1;
+  right: 0;
+  bottom: 0;
 }
 .fs__content {
   margin-top: 130px;
@@ -162,6 +183,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
 
 .logo {
@@ -178,6 +201,8 @@ button {
 }
 
 .featured {
+  position: relative;
+  z-index: 5;
   padding: 50px 0;
 }
 .featured__title {
@@ -265,7 +290,7 @@ button {
   padding-bottom: 243px;
 }
 .nfts .container {
-  min-height: 729px;
+  min-height: 755px;
   display: grid;
   grid-gap: 30px;
   align-items: end;
@@ -285,6 +310,11 @@ button {
   justify-content: flex-end;
   position: relative;
   margin-bottom: 74px;
+}
+.nfts__triangle {
+  position: absolute;
+  bottom: -180px;
+  right: -250px;
 }
 
 .card {
