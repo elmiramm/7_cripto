@@ -382,6 +382,9 @@ button {
   box-shadow: 8px -8px 0px -2px rgba(137, 130, 130, 0.5), 8px -8px 0px -2px #020619, 8px -8px 0px 0px #000;
 }
 
+.testmonial {
+  margin-bottom: 208px;
+}
 .testmonial__suptitle {
   text-align: center;
   font-size: 21px;
@@ -409,17 +412,19 @@ button {
   height: 34px;
   background-color: #5BD2BF;
   border-radius: 50%;
-  left: 59%;
+  top: 15%;
+  left: 61%;
   z-index: 2;
 }
 .reviews__img {
-  margin: 0 auto;
   width: 138px;
   height: 150px;
   border-radius: 50%;
   filter: grayscale(100%);
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 16%;
+  left: 31%;
 }
 .reviews__img img {
   position: absolute;
@@ -427,4 +432,12 @@ button {
 }
 .reviews__content {
   padding: 94px 26px 76px;
+  background-color: #24293F;
+  border-radius: 20px;
+  margin-top: 151px;
+  text-align: center;
+}
+.reviews__title {
+  font-size: 30px;
+  margin-bottom: 32px;
 }

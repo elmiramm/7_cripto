@@ -369,6 +369,7 @@ button {
 
 //Fifth - Testimonals 
 .testmonial {
+	margin-bottom: 208px;
 	&__suptitle {
 		text-align: center;
 
@@ -399,18 +400,20 @@ button {
 		height: 34px;
 		background-color: $textColor;
 		border-radius: 50%;
-		left: 59%;
+		top: 15%;
+		left: 61%;
 		z-index: 2;
 	}
 
 	&__img {
-		margin: 0 auto;
 		width: 138px;
 		height: 150px;
 		border-radius: 50%;
 		filter: grayscale(100%);
 		overflow: hidden;
-		position: relative;
+		position: absolute;
+		top:16%;
+		left: 31%;
 		& img {
 			position: absolute;
 			left: -5px;
@@ -418,6 +421,14 @@ button {
 	}
 	&__content {
 		padding: 94px 26px 76px;
+		background-color: $bgContent;
+		border-radius: 20px;
+		margin-top: 151px;
+		text-align: center;
+	}
+	&__title {
+		font-size: 30px;
+		margin-bottom: 32px;
 	}
 }
 
