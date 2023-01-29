@@ -454,6 +454,73 @@ button {
 	}
 }
 
+// Footer 
+.footer {
+	margin-bottom: 148px;
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	& .subtitle, 
+	& .footer__logo {
+		font-size: 23px;
+	}
+	&__logo {
+		padding: 0 74px;
+		margin-right: 54px;
+	}
+	&__nav {
+		flex: 1 1 auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		& ul .list-item {
+			font-size: 16px;
+			font-weight: 400;
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+
+	
+
+.subtitle {
+	margin-bottom: 16px;
+}
+
+.subscribe {
+	max-width: 253px;
+	&__form {
+		position: relative;
+
+		& .input {
+			width: 100%;
+			background-color: #3B7C70;
+			padding: 23px 12px;
+			border-radius: 40px;
+			border: none;
+		}
+	}
+	&__button {
+		position: absolute;
+		right: 0;
+		height: 100%;
+		border-radius: 40px;
+		font-size: 16px;
+		text-transform: capitalize;
+		padding: 0 20px;
+	}
+}
+
+input::placeholder {
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: $fontFamily;
+}
+
 
 
 
