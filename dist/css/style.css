@@ -463,13 +463,20 @@ button {
   padding: 28px 80px;
 }
 
-.footer {
-  margin-bottom: 148px;
-}
 .footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+  padding-bottom: 148px;
+}
+.footer .container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #1F143B, #3C8273);
 }
 .footer .subtitle, .footer .footer__logo {
   font-size: 23px;
@@ -496,7 +503,7 @@ button {
 }
 
 .subscribe {
-  max-width: 253px;
+  min-width: 253px;
 }
 .subscribe__form {
   position: relative;
